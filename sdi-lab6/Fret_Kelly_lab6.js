@@ -15,8 +15,8 @@ var familyFunction = function() {
 	var birthdayArray = ["May 30th", "Nov 26th", "Dec 28th", "Nov 18th", "Nov 21st", "Feb 5th", "Jul 5th", "Aug 10th"];
 	
 	
-	for (var incCounter = 0; incCounter < nameArray.length; incCounter++) {
-		console.log(nameArray[incCounter] + "'s birthday is on " + birthdayArray[incCounter] + ".\n");
+	for (var indexCounter = 0; indexCounter < nameArray.length; indexCounter++) {
+		console.log(nameArray[indexCounter] + "'s birthday is on " + birthdayArray[indexCounter] + ".\n");
 	};
 	
 	
@@ -31,6 +31,7 @@ var familyFunction = function() {
 	var theirBirthday = birthdayArray.join("\n");
 	console.log("\nJoined names:\n" + theirName + "\n\nJoined birthdays:\n" + theirBirthday);
 		
+	
 	
 };
 
