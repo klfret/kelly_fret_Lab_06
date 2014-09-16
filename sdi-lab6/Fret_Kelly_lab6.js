@@ -10,20 +10,27 @@
 // array function
 var familyFunction = function() {
 	
+	// literal array declaration with values
 	var nameArray = ["Cindy", "Rheanna", "Ness", "Darren", "Amethyst", "Daija", "Deziree", "Sugey"];
 	var birthdayArray = ["May 30th", "Nov 26th", "Dec 28th", "Nov 18th", "Nov 21st", "Feb 5th", "Jul 5th", "Aug 10th"];
 	
-	for (var inCounter = 0; inCounter < nameArray.length; inCounter++) {
-		
-		console.log(nameArray[inCounter] + "'s birthday is on " + birthdayArray[inCounter] + ".\n");
-		
+	
+	for (var incCounter = 0; incCounter < nameArray.length; incCounter++) {
+		console.log(nameArray[incCounter] + "'s birthday is on " + birthdayArray[incCounter] + ".\n");
 	};
-		
+	
+	
+	// array's reversed method
 	nameArray.reverse();
 	birthdayArray.reverse();
+	console.log("\nReversed names: \n" + nameArray + "\n\nReversed birthdays: \n" + birthdayArray + "\n");
 	
-	console.log("\n\nReversed Names: " + nameArray + "\nReversed Birthdays: " + birthdayArray);
 	
+	// array's join method
+	var theirName = nameArray.join("\n");
+	var theirBirthday = birthdayArray.join("\n");
+	console.log("\nJoined names:\n" + theirName + "\n\nJoined birthdays:\n" + theirBirthday);
+		
 	
 };
 
