@@ -13,16 +13,19 @@ var familyFunction = function() {
 	var nameArray = ["Cindy", "Rheanna", "Ness", "Darren", "Amethyst", "Daija", "Deziree", "Sugey"];
 	var birthdayArray = ["May 30th", "Nov 26th", "Dec 28th", "Nov 18th", "Nov 21st", "Feb 5th", "Jul 5th", "Aug 10th"];
 	
-	for (var counter = 0; counter < nameArray.length; counter++) {
+	for (var inCounter = 0; inCounter < nameArray.length; inCounter++) {
 		
-		console.log(nameArray[counter] + "'s birthday is on " + birthdayArray[counter] + ".\n");
+		console.log(nameArray[inCounter] + "'s birthday is on " + birthdayArray[inCounter] + ".\n");
 		
 	};
+		
+	nameArray.reverse();
+	birthdayArray.reverse();
 	
+	console.log("\n\nReversed Names: " + nameArray + "\nReversed Birthdays: " + birthdayArray);
 	
 	
 };
-
 
 familyFunction();
 
