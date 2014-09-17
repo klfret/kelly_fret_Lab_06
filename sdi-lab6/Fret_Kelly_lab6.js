@@ -12,14 +12,15 @@ var familyFunction = function() {
 	
 	// literal array declaration with values
 	var nameArray = ["Cindy", "Rheanna", "Ness", "Darren", "Amethyst", "Daija", "Deziree", "Sugey"];
-	var birthdayArray = ["May 30th", "Nov 26th", "Dec 28th", "Nov 18th", "Nov 21st", "Feb 5th", "Jul 5th", "Aug 10th"];
-	console.log("Initial array values.\n");
+	var birthdayArray = ["May 30", "Nov 26", "Dec 28", "Nov 18", "Nov 21", "Feb 5", "Jul 5", "Aug 10"];
+	console.log("Initial name and birthday arrays' values:\n");
 	console.log(nameArray);
 	console.log(birthdayArray);
 	console.log("\n");
 		
 	
 	// array name and birthday output
+	console.log("Name array and birthday array displayed together:\n");
 	for (var indexCounter = 0; indexCounter < nameArray.length; indexCounter++) {
 		console.log(nameArray[indexCounter] + "'s birthday is on " + birthdayArray[indexCounter] + ".");
 		
@@ -40,17 +41,21 @@ var familyFunction = function() {
 	// array's shift method to remove the first array element
 	var removedName = nameArray.shift();
 	var removedBday = birthdayArray.shift();
-	console.log(removedName + "'s name and " + removedBday + " birthday was removed.\n");
+	console.log("Shifted name array:\n");
+	console.log(nameArray);
+	console.log("Shifted birthday array:\n");
+	console.log(birthdayArray);
+	console.log(removedName + "'s name and " + removedBday + " birthday were removed from the top of their list.\n");
 	console.log("\n");
 	
 	
 	// array's join method to join the array elements as a string
 	var theirName = nameArray.join("\n");
 	var theirBirthday = birthdayArray.join("\n");
-	console.log("\nJoined names after " + removedName + "'s name was removed.\n" + theirName + "\n");
-	console.log("\nJoined birthdays after " + removedBday + " birthday was removed.\n" + theirBirthday + "\n");
+	console.log("\nJoined name array: \n" + theirName + "\n");
+	console.log("\nJoined birthday array: \n" + theirBirthday + "\n");
 		
-	
+	return;
 	
 };
 
